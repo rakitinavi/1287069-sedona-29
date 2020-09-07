@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Виктория Ракитина](https://up.htmlacademy.ru/htmlcss/29/user/1287069).
-* Наставник: [Викор Кан](https://htmlacademy.ru/profile/viktorkan).
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
