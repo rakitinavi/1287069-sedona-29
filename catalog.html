@@ -1,155 +1,220 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Sedona</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <img src="https://via.placeholder.com/138x70" width="138" height="70" alt="логотип сайта Седона">
-        <ul>
-          <li><a href="catalog.html">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
-          <li><a href="">Карта штата</a></li>
-          <li><a href="">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-       <img src="https://via.placeholder.com/1200x509" width="1200" height="509" alt="Добро пожаловать Седона">
-       <h1>SEDONA</h1>
-      </section>
-         <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      <div>
-       <h2>Преимущества</h2>
-         <h2>
-           Настоящий городок
-         </h2>
-         <p>
-         №1
+   <head>
+      <meta charset="utf-8">
+      <title>HTML Academy: Седона</title>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <header class="main-header">
+         <nav class="main-nav">
+            <a class="header-logo" href="index.html">
+            <img src="https://via.placeholder.com/138x70" width="138" height="70" alt="Sedona logo">
+            </a>
+            <ul class="main-nav-menu">
+               <li class="main-nav-item main-nav-item-left-side">
+                  <a class="main-nav-item-link" href="#">Информация</a>
+               </li>
+               <li class="main-nav-item main-nav-item-left-side">
+                  <a class="main-nav-item-link" href="#">Фото и видео</a>
+               </li>
+               <li class="main-nav-item main-nav-item-right-side">
+                  <a class="main-nav-item-link" href="#">Карта штата</a>
+               </li>
+               <li class="main-nav-item main-nav-item-right-side">
+                  <a class="main-nav-item-link" href="catalog.html">Гостиницы</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <section>
+            <h1 class="visually-hidden">Поиск отелей в Седоне</h1>
+            <form action="catalog.html" method="get">
+               <div>
+                  <div>
+                     <fieldset>
+                        <legend>Инфраструктура:</legend>
+                        <ul>
+                           <li>
+                              <input type="checkbox" name="pool" id="pool" checked>
+                              <label for="pool">Бассейн</label>
+                           </li>
+                           <li>
+                              <input type="checkbox" name="parking" id="parking">
+                              <label for="parking">Парковка</label>
+                           </li>
+                           <li>
+                              <input type="checkbox" name="wi-fi" id="wi-fi">
+                              <label for="wi-fi">WI-FI</label>
+                           </li>
+                        </ul>
+                     </fieldset>
+                  </div>
+                  <div>
+                     <fieldset>
+                        <legend>Тип жилья:</legend>
+                        <ul>
+                           <li>
+                              <input  type="checkbox" name="hotel" id="hotel" checked>
+                              <label for="hotel">Гостиница</label>
+                           </li>
+                           <li>
+                              <input type="checkbox" name="motel" id="motel" checked>
+                              <label for="motel">Мотель</label>
+                           </li>
+                           <li>
+                              <input type="checkbox" name="apartments" id="apartments" checked>
+                              <label for="apartments">Апартаменты</label>
+                           </li>
+                        </ul>
+                     </fieldset>
+                  </div>
+                  <div>
+                     <fieldset>
+                        <legend>Стоимость в сутки (p):</legend>
+                        <div>
+                           <label>
+                           От <input type="text" name="min-price-input" value="0">
+                           </label>
+                           <label>
+                           До <input type="text" name="max-price-input" value="3000">
+                           </label>
+                        </div>
+                     </fieldset>
+                     <div>
+                        <button type="submit" name="search-show">Показать</button>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </section>
+         <section>
+            <h2 class="visually-hidden">Результаты поиска отелей в Седоне</h2>
+            <section>
+               <div>
+                  <h3>Сортировка результатов</h3>
+                  <div>Найдено: <span id="hotels-count">3</span></div>
+               </div>
+               <div>
+                  <ul>
+                     <li>Сортировка:</li>
+                     <li><a href="#">По цене</a></li>
+                     <li><a href="#">По типу</a></li>
+                     <li><a href="#">По рейтингу</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <ul>
+                     <li><a href="#">По возрастанию</a></li>
+                     <li><a href="#">По убыванию</a></li>
+                  </ul>
+               </div>
+            </section>
+            <h3 class="visually-hidden">Список отелей</h3>
+            <ul>
+               <li>
+                  <div>
+                     <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Amara Resort and Spa">
+                  </div>
+                  <div>
+                     <a href="#">Amara Resort &amp; Spa</a>
+                     <div>
+                        <div>Гостиница</div>
+                        <div>от 4000 p.</div>
+                     </div>
+                     <div>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                     </div>
+                  </div>
+                  <div>
+                     <span aria-label="4*">
+                     <span>*</span>
+                     <span>*</span>
+                     <span>*</span>
+                     <span>*</span>
+                     </span>
+                     <span>Рейтинг: 8,5</span>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Desert Quail Inn">
+                  </div>
+                  <div>
+                     <a href="#">Desert Quail Inn</a>
+                     <div>
+                        <div>Мотель</div>
+                        <div>от 3000 p.</div>
+                     </div>
+                     <div>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                     </div>
+                  </div>
+                  <div>
+                     <span aria-label="3*">
+                     <span>*</span>
+                     <span>*</span>
+                     <span>*</span>
+                     </span>
+                     <span>Рейтинг: 8,9</span>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Villas at Poco Diablo">
+                  </div>
+                  <div>
+                     <a href="#">Villas at Poco Diablo</a>
+                     <div>
+                        <div>Апартаменты</div>
+                        <div>от 2000 p.</div>
+                     </div>
+                     <div>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                     </div>
+                  </div>
+                  <div>
+                     <span aria-label="2*">
+                     <span>*</span>
+                     <span>*</span>
+                     </span>
+                     <span>Рейтинг: 9,2</span>
+                  </div>
+               </li>
+            </ul>
+         </section>
+      </main>
+      <footer class="page-footer page-footer-index">
+         <div class="page-footer-info">
+            <a class="hashtag" href="#">#visitSedona</a>
+         </div>
+         <p class="page-footer-contacts">
+            Тел:
+            <a class="contacts-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
          </p>
-         <p>
-           Седона - не аттракцион для туристов, там течёт своя жизнь
+         <div class="footer-social">
+            <ul class="footer-social-list">
+               <li class="social-item">
+                  <a class="social-button" href="#">Twitter</a>
+               </li>
+               <li class="social-item">
+                  <a class="social-button" href="#">Facebook</a>
+               </li>
+               <li class="social-item">
+                  <a class="social-button" href="#">YouTube</a>
+               </li>
+            </ul>
+         </div>
+         <p class="developer">
+            Website by
+            <a href="https://htmlacademy.ru">HTML Academy</a>
          </p>
-         <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="городской вид">
-       </div>
-       <ul>
-         <li>
-           <h2>
-             Жилье
-           </h2>
-           <p>
-             Рекомендуем пожить в настоящем мотеле, всё как в кино!
-           </p>
-         </li>
-         <li>
-           <h2>
-             Еда
-           </h2>
-           <p>
-             Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-           </p>
-         </li>
-         <li>
-           <h2>
-             Сувениры
-           </h2>
-           <p>
-             Не только китайского, но и местного производства!
-           </p>
-         </li>
-       </ul>
-       <div>
-         <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="природа">
-         <h2>
-          Там есть Мост дьявола
-         </h2>
-         <p>
-          №2
-         </p>
-         <p>
-          Да, по нему можно пройти! Если конечно вы осмелитесь
-         </p>
-       </div>
-       <ul>
-         <li>
-           <h2>
-             Небольшая площадь
-           </h2>
-           <p>
-             №3
-           </p>
-           <p>
-             Все достопримечательности находятся очень близко
-           </p>
-         </li>
-         <li>
-           <h2>
-             Красивая дорога
-           </h2>
-           <p>
-             №4
-           </p>
-           <p>
-             Ехать в седону из лас-вегаса совсем не скучно!
-           </p>
-         </li>
-         <li>
-           <h2>
-             Мало туристов
-           </h2>
-           <p>
-             №5
-           </p>
-           <p>
-             Большинство едет в гранд каньон и толпится там
-           </p>
-         </li>
-       </ul>
-       <section>
-        <h2>
-          Заинтересовались?
-        </h2>
-        <p>
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
-        </p>
-      </section>
-      <section>
-        <div>
-          <h2>ПОИСК ГОСТИНИЦЫ В Седоне</h2>
-          <!-- Заголовок будет скрыт -->
-          <button type="button">ПОИСК ГОСТИНИЦЫ В Седоне</button>
-         <!-- Здесь будет форма поиска -->
-       </div>
-         <!-- Здесь будет карта -->
-       </section>
-    </main>
-    <footer>
-        <!-- Блок с контактной информацией -->
-        <span>
-          #visitSEDONA
-        </span>
-      <p>
-        Тел: <a href="tel:+74956660166">+7(495) 666-01-66</a>
-      </p>
-      <ul>
-        <li>
-          <a href="#">Twitter</a>
-        </li>
-        <li>
-          <a href="#">Facebook</a>
-        </li>
-        <li>
-          <a href="#">YouTube</a>
-        </li>
-      </ul>
-      <p>
-        Website by
-        <a href="https://htmlacademy.ru">HTML Academy</a>
-      </p>
-    </footer>
-  </body>
+      </footer>
+   </body>
 </html>
