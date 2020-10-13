@@ -8,10 +8,13 @@
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body class="page-body">
-      <header class="main-header">
+      <div class="container">
+         <img class="showcase-bg" src="img/showcase-bg.jpg" width="1200" height="509" alt="Добро пожаловать Седона">
+      </div>
+      <header class="page-header">
          <nav class="main-nav">
             <a class="header-logo" href="index.html">
-            <img src="https://via.placeholder.com/138x70" width="138" height="70" alt="Sedona logo">
+            <img class="logo-img" src="img/sedona-logo.png" width="138" height="70" alt="Sedona logo">
             </a>
             <ul class="main-nav-menu">
                <li class="main-nav-item ">
@@ -29,10 +32,11 @@
             </ul>
          </nav>
       </header>
-      <main class="container">
-         <div class="showcase">
-            <img src="https://via.placeholder.com/1200x509" width="1200" height="509" alt="Добро пожаловать Седона">
-         </div>
+      <main class="page-main">
+         <section class="showcase">
+            <h1 class="visually-hidden">Седона, штат Аризона</h1>
+            <img class="showcase-img" src="img/welcome.png" alt="Wellcome to the gorgeous Sedona!">
+         </section>
          <section class="about">
             <div class="about-info">
                <h2 class="about-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -46,60 +50,110 @@
                <p class="reason-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="reason-img reason-img-first">
-               <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="городской вид">
+               <img src="img/sedona-photo1.jpg" width="800" height="401" alt="Городской вид">
             </div>
          </section>
-         <div class="features">
+         <section class="features">
+            <h2 class="visually-hidden">Особенности Седоны</h2>
             <ul class="features-items">
                <li class="features-item features-item-house">
-                  <h2 class="feature-item-title">Жилье</h2>
+                  <h3 class="feature-item-title">Жилье</h3>
                   <p class="features-item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                </li>
                <li class="features-item features-item-food">
-                  <h2 class="feature-item-title">Еда</h2>
+                  <h3 class="feature-item-title">Еда</h3>
                   <p class="features-item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                </li>
                <li class="features-item features-item-souvenirs">
-                  <h2 class="feature-item-title">Сувениры</h2>
+                  <h3 class="feature-item-title">Сувениры</h3>
                   <p class="features-item-text">Не только китайского, но и местного производства!</p>
                </li>
             </ul>
-         </div>
-         <div class="reason reason-second">
+         </section>
+         <section class="reason reason-second">
             <div class="reason-img reason-img-second">
-               <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="природа">
+               <img src="img/sedona-photo2.jpg" width="800" height="400" alt="Природа Седоны">
             </div>
-            <h2 class="reason-title">Там есть Мост дьявола</h2>
-            <span class="reason-number">№2</span>
-            <p class="reason-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-         </div>
-         <div class="reasons">
+            <div class="reason-info">
+               <h2 class="reason-title">Там есть Мост дьявола</h2>
+               <span class="reason-number">— №2 —</span>
+               <p class="reason-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+         </section>
+         <section class="reasons">
+            <h2 class="visually-hidden">Преимущества Седоны</h2>
             <ul class="reasons-list">
                <li class="reasons-item">
-                  <h2 class="reasons-item-title">Небольшая площадь</h2>
-                  <span class="reasons-item-number">№3</span>
+                  <h3 class="reasons-item-title">Небольшая площадь</h3>
+                  <span class="reasons-item-number">— №3 —</span>
                   <p class="reasons-item-text">Все достопримечательности находятся очень близко</p>
                </li>
                <li class="reasons-item">
-                  <h2 class="reasons-item-title">Красивая дорога</h2>
-                  <span class="reasons-item-number">№4</span>
+                  <h3 class="reasons-item-title">Красивая дорога</h3>
+                  <span class="reasons-item-number">— №4 —</span>
                   <p class="reasons-item-text">Ехать в седону из лас-вегаса совсем не скучно!</p>
                </li>
                <li class="reasons-item">
-                  <h2 class="reasons-item-title">Мало туристов</h2>
-                  <span class="reasons-item-number">№5</span>
+                  <h3 class="reasons-item-title">Мало туристов</h3>
+                  <span class="reasons-item-number">— №5 —</span>
                   <p class="reasons-item-text">Большинство едет в гранд каньон и толпится там</p>
                </li>
             </ul>
-         </div>
+         </section>
          <section class="search">
             <div class="search-info">
                <h2 class="search-title">Заинтересовались?</h2>
                <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             </div>
-            <div>
-               <button class="search-btn" type="button" name="search-open">Поиск гостиницы в Седоне</button>
-               <!-- Здесь будет форма поиска -->
+            <div class="search-map-wrapper">
+               <div class="search-form-wrapper">
+                  <button class="search-btn btn btn-large btn-action" type="button" name="search-open">Поиск гостиницы в Седоне</button>
+                  <form class="search-form" action="hotel-seach" method="get">
+                     <div class="search-form-row">
+                        <label class="search-form-label" for="check-in">Дата заезда</label>
+                        <div class="search-input-wrapper  search-wrapper-calendar">
+                           <input class="search-form-input" type="text" placeholder="24 апреля 2017" id="check-in" name="heck-in">
+                           <button class="search-calendar-btn" type="button" name="calendar">
+                              <svg class="search-calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                                 <path d="M19.25 2.025h-2.844V.648c0-.38-.294-.69-.656-.69-.363 0-.656.31-.656.69v1.377h-3.938V.648c0-.38-.294-.69-.655-.69-.362 0-.656.31-.656.69v1.377H5.906V.648c0-.38-.294-.69-.656-.69-.363 0-.657.31-.657.69v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.18.784 22 1.75 22h17.5c.967 0 1.75-.82 1.75-1.836V3.862c0-1.015-.783-1.837-1.75-1.837zm.438 18.14c0 .252-.195.458-.437.458H1.75c-.24 0-.438-.206-.438-.46v-16.3c0-.254.196-.46.438-.46h2.844V4.78c0 .382.294.69.657.69.363 0 .657-.308.657-.69V3.404h3.938V4.78c0 .382.294.69.657.69.36 0 .655-.308.655-.69V3.404h3.938V4.78c0 .382.293.69.656.69.363 0 .657-.308.657-.69V3.404h2.845c.24 0 .437.206.437.46v16.3z"/>
+                                 <path d="M4.594 8.225H7.22v2.066H4.593zM4.594 11.668H7.22v2.067H4.593zM4.594 15.112H7.22v2.066H4.593zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.78 15.112h2.626v2.066H13.78zM13.78 11.668h2.626v2.067H13.78zM13.78 8.225h2.626v2.066H13.78z"/>
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+                     <div class="search-form-row">
+                        <label class="search-form-label" for="check-out">Дата заезда</label>
+                        <div class="search-input-wrapper  search-wrapper-calendar">
+                           <input class="search-form-input" type="text" placeholder="4 июля 2017" id="check-out" name="heck-out">
+                           <button class="search-calendar-btn" type="button" name="calendar">
+                              <svg class="alendar-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                                 <path d="M19.25 2.025h-2.844V.648c0-.38-.294-.69-.656-.69-.363 0-.656.31-.656.69v1.377h-3.938V.648c0-.38-.294-.69-.655-.69-.362 0-.656.31-.656.69v1.377H5.906V.648c0-.38-.294-.69-.656-.69-.363 0-.657.31-.657.69v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.18.784 22 1.75 22h17.5c.967 0 1.75-.82 1.75-1.836V3.862c0-1.015-.783-1.837-1.75-1.837zm.438 18.14c0 .252-.195.458-.437.458H1.75c-.24 0-.438-.206-.438-.46v-16.3c0-.254.196-.46.438-.46h2.844V4.78c0 .382.294.69.657.69.363 0 .657-.308.657-.69V3.404h3.938V4.78c0 .382.294.69.657.69.36 0 .655-.308.655-.69V3.404h3.938V4.78c0 .382.293.69.656.69.363 0 .657-.308.657-.69V3.404h2.845c.24 0 .437.206.437.46v16.3z"/>
+                                 <path d="M4.594 8.225H7.22v2.066H4.593zM4.594 11.668H7.22v2.067H4.593zM4.594 15.112H7.22v2.066H4.593zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.78 15.112h2.626v2.066H13.78zM13.78 11.668h2.626v2.067H13.78zM13.78 8.225h2.626v2.066H13.78z"/>
+                              </svg>
+                           </button>
+                           <div class="search-form-row  search-row-columns">
+                              <div class="search-form-column  search-column-1">
+                                 <label class="search-form-label" for="adults">Взрослые</label>
+                                 <div class="search-input-wrapper  search-wrapper-counter">
+                                    <button class="search-input-control  search-control-minus" type="button"><span class="visually-hidden">Увеличить</span></button>
+                                    <input class="search-input" type="text" value="2" id="adults" name="adults">
+                                    <button class="search-input-control  search-control-plus" type="button"><span class="visually-hidden">Уменьшить</span></button>
+                                 </div>
+                              </div>
+                              <div class="search-column  search-column-2">
+                                 <label class="search-form-label" for="kids">Дети</label>
+                                 <div class="search-input-wrapper  search-wrapper-counter">
+                                    <button class="search-input-control  search-control-minus" type="button"><span class="visually-hidden">Увеличить</span></button>
+                                    <input class="search-input" type="text" value="2" id="adults" name="adults">
+                                    <button class="search-input-control  search-control-plus" type="button"><span class="visually-hidden">Уменьшить</span></button>
+                                 </div>
+                              </div>
+                           </div>
+                           <button class="search-form-submit  btn  btn-medium" type="submit" name="search-submit">Найти</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
             </div>
             <!-- Здесь будет карта -->
          </section>
@@ -113,15 +167,15 @@
             <a class="contacts-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
          </p>
          <div class="footer-social">
-            <ul class="footer-social-list">
+            <ul class="social">
                <li class="social-item">
-                  <a class="social-button" href="#">Twitter</a>
+                  <a class="social-link social-link-tw" href="#"><span class="visually-hidden">Twitter</span></a>
                </li>
                <li class="social-item">
-                  <a class="social-button" href="#">Facebook</a>
+                  <a class="social-link social-link-fb" href="#"><span class="visually-hidden">Facebook</span></a>
                </li>
                <li class="social-item">
-                  <a class="social-button" href="#">YouTube</a>
+                  <a class="social-link social-link-yt" href="#"><span class="visually-hidden">YouTube</span></a>
                </li>
             </ul>
          </div>
