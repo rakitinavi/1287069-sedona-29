@@ -133,7 +133,7 @@ img {
 
 .page-header {
   position: relative;
-  background-color: #fff;
+  background-color: var(--basic-white);
   z-index: 1;
 }
 
@@ -156,12 +156,14 @@ img {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #fff;
+  background-color: var(--basic-white);
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
   box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 .showcase {
+  background: url(../img/showcase-bg.jpg) no-repeat center;
+  background-size: 100% auto;
   position: relative;
   min-height: 508px;
   padding-top: 76px;
@@ -631,7 +633,7 @@ img {
   left: 0;
   width: 2px;
   height: 22px;
-  background-color: #fff;
+  background-color: var(--basic-white);
 }
 .price-inputs {
   padding-top: 5.5px;
