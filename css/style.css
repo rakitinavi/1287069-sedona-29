@@ -5,9 +5,8 @@
    --basic-light-gray: #EEEEEE;
    --basic-extra-light: #F2F2F2;
    --basic-dark-gray: #EBEBEB;
-   --basic-showcase: #e3edf6
+   --basic-showcase: #e3edf6;
    --basic-gray999: #A9A9A9;
-   --basic-gr-gray: #a9a9;
    --basic-blue: #81B3D2;
    --basic-blue669: #669EC0;
    --basic-extra-blue: #5496BD;
@@ -271,6 +270,7 @@ img {
    -webkit-transform: translateY(-50%);
    -ms-transform: translateY(-50%);
    transform: translateY(-50%);
+   background-color: var(--basic-white-4)
 }
 
 .reason-title {
@@ -620,7 +620,7 @@ img {
    -webkit-box-orient: vertical;
    -webkit-box-direction: normal;
    -ms-flex-flow: 1;
-   flex-flow: 1;
+   flex-flow: wrap;
 }
 
 .search-wrapper-counter .search-form-input {
@@ -746,7 +746,7 @@ img {
    width: 11px;
    height: 3px;
    border-radius: 1px;
-   background-color: var(--basic-gr-gray);
+   background-color: var(--basic-gray999);
 }
 
 .search-control-plus::after {
@@ -757,7 +757,7 @@ img {
    width: 3px;
    height: 11px;
    border-radius: 1px;
-   background-color: #a9a9a9;
+   background-color: var(--basic-gray999);
 }
 
 .search-control-minus::before {
@@ -768,7 +768,7 @@ img {
    width: 12px;
    height: 3px;
    border-radius: 1px;
-   background-color: #a9a9a9;
+   background-color: var(--basic-gray999);
 }
 
 .search-input-control:hover::before,
@@ -785,6 +785,7 @@ img {
 
 .hotels-filters {
    background: var(--basic-catalog) url(../img/form-bg.jpg) no-repeat center;
+   background-color: var(--basic-gray999);
    background-size: 100% auto;
    padding: 25px 0 19px;
    min-height: 217px;
@@ -1163,7 +1164,7 @@ img {
    -webkit-box-direction: normal;
    -ms-flex-direction: row;
    flex-direction: row;
-   padding: 25px 6% 30px;
+   padding: 25px 6% 18px;
    border-bottom: 1px solid var(--basic-hotels);
 }
 
@@ -1173,6 +1174,7 @@ img {
 }
 
 .hotels-photo img {
+  background-color: var(--basic-hotels);
    display: block;
    width: 135px;
    height: 90px;
@@ -1186,7 +1188,7 @@ img {
    -webkit-box-direction: normal;
    -ms-flex-direction: row;
    flex-direction: row;
-   margin-top: 7px;
+   margin-top: 1px;
 }
 
 .hotels-type {
@@ -1202,11 +1204,11 @@ img {
    -webkit-box-direction: normal;
    -ms-flex-direction: row;
    flex-direction: row;
-   margin-top: 14px;
+   margin-top: 11px;
 }
 
 .more-info {
-   margin-right: 6px;
+   margin-right: 4px;
 }
 
 .hotels-name {
@@ -1310,6 +1312,10 @@ img {
    right: 0;
    bottom: 0;
    background-color: var(--opacity-footer);
+}
+
+.catalog-footer {
+  position: static;
 }
 
 .page-footer {
